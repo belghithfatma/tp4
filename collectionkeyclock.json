@@ -1,0 +1,108 @@
+{
+  "info": {
+    "_postman_id": "013fcf91-a439-4e30-9acb-a1",
+    "name": "etape 6",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46403193"
+  },
+  "item": [
+    {
+      "name": "http://localhost:8080/realms/api-realm/protocol/openid-connect/token",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "grant_type",
+              "value": "password",
+              "type": "text",
+              "uuid": "c5aae44e-9303-4542-b2c7-ba89aa2af467"
+            },
+            {
+              "key": "client_id",
+              "value": "pai-id",
+              "type": "text",
+              "uuid": "a8117e96-73d1-4faf-ab71-b946cf92de6f"
+            },
+            {
+              "key": "client_secret",
+              "value": "lmMqDHxDIwXzO6GITSQHs61z47w8r7JQ",
+              "type": "text",
+              "uuid": "27c3a287-d349-4540-8960-7e2d340b8193"
+            },
+            {
+              "key": "username",
+              "value": "fatma",
+              "type": "text",
+              "uuid": "b979ec81-f47a-4985-84e0-65d7283f45d2"
+            },
+            {
+              "key": "password",
+              "value": "1234",
+              "type": "text",
+              "uuid": "881b95e3-c937-49b5-8d28-2bac9982495b"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/realms/api-realm/protocol/openid-connect/token",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "realms",
+            "api-realm",
+            "protocol",
+            "openid-connect",
+            "token"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/secure",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/personnes",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsInR5cCI0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9yZWFsbXMvYXBpLXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjcwNmE2NTg5LTBiOTQtNGU1ZS05NmM1LWM1YzU2MTNiMzYxNyIsInR5cCI6IkJlYXJlciIsImF6cCI6InBhaS1pZCIsInNpZCI6IkZOYWNheEVTMFhvVVdGd3NYOUJKaTRPXyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJkZWZhdWx0LXJvbGVzLWFwaS1yZWFsbSJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiZmF0bWEgYmVsIiwicHJlZmVycmVkaX3VzZXJuYW1lIjoiZmF0bWEiLCJnaXZlbl9uYW1lIjoiZmF0bWEiLCJmYW1pbHlfbmFtZSI6ImJlbCIsImVtYWlsIjoiZmF0bWEuYmVsZ2hpdGhAcG9seXRlY2huaWNpZW4udG4ifQ.HAlikzzE9ecXWg9iLoZTR7B4Q5Hj1RIhaf1OHhfvdXpkfirEfhhzpkUyfdtKudSkgqp4RIP3nl1XYYhsljXf6TYZ5FnRDkWj8SqSK0-eP-rEcybdwYgKHACqrbLRITA1m-a6fniWkglkAaN1GFyuGCQLHbGsHZkowuwWEZQs2Ms9uBpMXEZskfDSHqok36ir_GT4DjdJ_JueMukyfQcbDQaa3GDK1P4KIF1nxmEQ-jyEHcea-6a4XWD_Ju61HSfmw_hAHHcRK-6H5AePscIDOJrvl8VSr0XmupbwJjb5adXBFp3LX0V1OyuUEDybroO05N1U6QVKTgrIh2Fyx7rkqA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/personnes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "personnes"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

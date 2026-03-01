@@ -1,0 +1,11 @@
+openapi: 3.0.3 
+info: { title: API Personnes, version: 1.0.0 } 
+servers: [{ url: http://localhost:3000 }] 
+paths: 
+  /personnes: 
+    get: { summary: Lister, responses: { "200": { description: OK } } } 
+    post: { summary: Créer, responses: { "200": { description: OK } } } 
+  /personnes/{id}: 
+    get: { summary: Lire, responses: { "200": { description: OK } } } 
+    put: { summary: Modifier, responses: { "200": { description: OK } } } 
+    delete: { summary: Supprimer, responses: { "200": { description: OK } } }
